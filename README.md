@@ -3,6 +3,11 @@
 ```java
 // "static void main" must be defined in a public class.
 // not working
+/*
+Line 26: error: BookShelf is not abstract and does not override abstract method interator() in Aggregate [in Main.java]
+class BookShelf implements Aggregate {
+^
+*/
 public class Main {
     public static void main(String[] args) {
         BookShelf bookShelf = new BookShelf(4);
