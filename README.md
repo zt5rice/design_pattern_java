@@ -1,6 +1,7 @@
 # Iterator
 
 ## Comment:
+0. Achieve an array iterator
 1. Iterator duplicates the java Iterator, so I rename with IteratorP(ersonal)
 2. Reference: https://www.runoob.com/design-pattern/iterator-pattern.html
 
