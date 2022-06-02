@@ -112,3 +112,6 @@ public class Demo {
     }
 }
 ```
+
+## Abstract factory
+See reference: https://github.com/JamesZBL/java_design_patterns/tree/master/abstract-factory
