@@ -59,3 +59,56 @@ class Rectangle implements Shape {
 
 */
 ```
+
+Simple factory pattern violates the Open-Close principle. It can be improved if factory interface is used instead.
+
+```java
+/**
+ Print:: Square
+ Print:: Triangle
+*/
+/********factory folder************/
+interface Shape {
+    void draw();
+}
+
+interface Factory {
+    public Shape getShape();
+}
+
+/********factory implementation folder************/
+class Square implements Shape {
+    public void draw() {
+        System.out.println(" Print:: Square");
+    }
+}
+
+class Triangle implements Shape {
+    public void draw() {
+        System.out.println(" Print:: Triangle");
+    }
+}
+
+class SquareShapeFactory implements Factory{
+    public Shape getShape() {
+      return new Square();
+    }
+}
+
+class TriangleShapeFactory implements Factory{
+    public Shape getShape() {
+      return new Triangle();
+    }
+}
+
+/********Demo************/
+public class Demo {
+    public static void main(String[] args) {
+        Factory squarefactory = new SquareShapeFactory();
+        squarefactory.getShape().draw();
+        Factory trianglefactory = new TriangleShapeFactory ();
+        trianglefactory.getShape().draw();
+
+    }
+}
+```
