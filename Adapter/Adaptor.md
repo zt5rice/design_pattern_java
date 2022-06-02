@@ -41,6 +41,8 @@ class Adapter extends Adaptee implements Target {
     public Adapter(String string) {
         super(string);
     }
+
+    @Override
     public void use110Vpower() {
         use220Vpower();
         System.out.println(" now in 110V");
@@ -97,3 +99,5 @@ class Adapter extends Target {
 }
 
 ```
+
+https://github.com/JamesZBL/java_design_patterns/tree/master/adapter
