@@ -11,6 +11,7 @@ public class Main {
     }
 }
 
+
 // 创建一个接口：
 interface Coffee {
     public double getCosts();
